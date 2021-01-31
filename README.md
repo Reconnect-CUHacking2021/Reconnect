@@ -13,7 +13,34 @@
 * Run `npm install` from the project root to install all required dependencies.
 * Run `ionic serve` in a terminal from the project's root folder.
 
+## Authors
+* [Michael Kazman](https://github.com/SeniorFluffie/) - 5th Year Computer Science \
+Front-end design  
+
+* [Sidhant Kapahi](https://sidkapahi.com) - 4th Year UX Design \
+UX design, content creation, and business pitch
+
+* [Edward Li](https://github.com/RadioactiveHydra) - Grade 11, Ottawa \
+Back-end & architecture design
+
+* [Tomas McNamer](https://github.com/tommcn) - Grade 12, Ottawa \
+Back-end & architecture design
+
+## Frameworks
+* Ionic
+* React
+* Django
+* REST APIs
+* JWT
+* SQLite
+* Pillow
+
+## Back-end
+The back-end can be found [here](https://github.com/Reconnect-CUHacking2021/backend). It features Djano, a SQLite database, along with JWT and REST APIs.
+
 ![Both Views](public/assets/img/Desktop-Mobile.png)
+
+# Product View
 
 ## Description
 Reconnect is the perfect platform for connecting store owners to customers in a post-covid world. Ensuring stores are comfortable with thier customers, and still helping those they aren't. We imagine this as a government first app, with information being shared about updates on the pandemic. There are multiple components, here is what's included:
