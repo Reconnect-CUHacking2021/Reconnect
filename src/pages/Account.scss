@@ -4,3 +4,7 @@
     border-radius: 50%;
   }  
 }
+
+.list-md.list-inset ion-item:first-child {
+  --border-width: 0px;
+}

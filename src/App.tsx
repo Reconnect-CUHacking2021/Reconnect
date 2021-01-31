@@ -28,7 +28,6 @@ import { connect } from './data/connect';
 import { AppContextProvider } from './data/AppContext';
 import { loadConfData } from './data/sessions/sessions.actions';
 import { setIsLoggedIn, setUsername, loadUserData } from './data/user/user.actions';
-import Account from './pages/Account';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 import Support from './pages/Support';
@@ -81,7 +80,6 @@ const IonicApp: React.FC<IonicAppProps> = ({ darkMode, schedule, setIsLoggedIn, 
                 which makes transitions between tabs and non tab pages smooth
                 */}
                 <Route path="/tabs" render={() => <MainTabs />} />
-                <Route path="/account" component={Account} />
                 <Route path="/login" component={Login} />
                 <Route path="/signup" component={Signup} />
                 <Route path="/support" component={Support} />

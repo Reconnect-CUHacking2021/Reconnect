@@ -3,7 +3,7 @@ import { IonHeader, IonToolbar, IonContent, IonPage, IonButtons, IonBackButton, 
 import { connect } from '../data/connect';
 import { withRouter, RouteComponentProps } from 'react-router';
 import * as selectors from '../data/selectors';
-import { starOutline, bookmark, bookmarkOutline, share, cloudDownload } from 'ionicons/icons';
+import { bookmark, bookmarkOutline, share, cloudDownload } from 'ionicons/icons';
 import './SessionDetail.scss';
 import { addFavorite, removeFavorite } from '../data/sessions/sessions.actions';
 import { Session } from '../models/Schedule';

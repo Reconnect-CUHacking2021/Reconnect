@@ -35,7 +35,8 @@
     height: calc(250px + var(--ion-safe-area-top));
 
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
+    height: 154px;
   }
 
   .speaker-background img {
@@ -52,13 +53,13 @@
     color: white;
   }
 
-  .speaker-page-bottom {
-    position:absolute;                  
+  .speaker-page-bottom {                 
     left: 50%;
     bottom: -60px;
-    transform: translate(-50%, -50%);
     width: auto;
-    margin: 0 auto;
+    margin: 0px auto;
+    text-align: center;
+    padding-top: 0px;
   }
 
   .speaker-button {
@@ -68,7 +69,7 @@
   }
 
   .widgets_div {
-    padding: 8px 0;
+    padding: 12px 0px 8px;
   }
   
   .widgets_div .icon_div {
@@ -98,8 +99,9 @@
   }
 
   .icon-div {
-    display: flex;
-    align-items: center;    
+    display: inline-flex;
+    align-items: center;
+       
   }
 
   .md .speaker-background {
@@ -120,10 +122,26 @@
   }
 
   .speaker-detail hr {
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
 
     background: var(--ion-color-step-150, #d7d8da);
   }
 
+}
+
+.map-alert .alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md {
+  max-height: none;
+}
+
+.map-alert .alert-wrapper {
+  max-width: 375px;
+}
+
+.qr-alert .alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md {
+  max-height: none;
+}
+
+.qr-alert .alert-wrapper {
+  max-width: 375px;
 }

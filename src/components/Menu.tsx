@@ -2,7 +2,7 @@ import React from 'react';
 import { RouteComponentProps, withRouter, useLocation } from 'react-router';
 
 import { IonContent, IonIcon, IonItem, IonLabel, IonList, IonListHeader, IonMenu, IonMenuToggle, IonToggle } from '@ionic/react';
-import { calendar, hammer, moon, help, informationCircleOutline, logIn, logOut, mapOutline, people, person, personAdd } from 'ionicons/icons';
+import { calendar, hammer, moon, help, logIn, logOut, people, person, personAdd } from 'ionicons/icons';
 
 import { connect } from '../data/connect';
 import { setDarkMode } from '../data/user/user.actions';
@@ -13,8 +13,7 @@ const routes = {
   appPages: [
     { title: 'Updates', path: '/tabs/updates', icon: calendar, src: "/assets/icon/updates.svg" },
     { title: 'Stores', path: '/tabs/store', icon: people, src:"/assets/icon/storefront.svg" },
-    { title: 'Account', path: '/tabs/account', icon: person },
-    // { title: 'About', path: '/tabs/about', icon: informationCircleOutline }
+    { title: 'Account', path: '/tabs/account', icon: person }
   ],
   loggedInPages: [
     { title: 'Account', path: '/account', icon: person },

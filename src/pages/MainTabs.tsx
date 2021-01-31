@@ -6,7 +6,6 @@ import SchedulePage from './SchedulePage';
 import SpeakerList from './SpeakerList';
 import SpeakerDetail from './SpeakerDetail';
 import SessionDetail from './SessionDetail';
-import MapView from './MapView';
 import Account from './Account';
 
 interface MainTabsProps { }
@@ -44,10 +43,6 @@ const MainTabs: React.FC<MainTabsProps> = () => {
           <IonIcon icon={person} />
           <IonLabel>Account</IonLabel>
         </IonTabButton>
-        {/* <IonTabButton tab="about" href="/tabs/about">
-          <IonIcon icon={informationCircle} />
-          <IonLabel>About</IonLabel>
-        </IonTabButton> */}
       </IonTabBar>
     </IonTabs>
   );
