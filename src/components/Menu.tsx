@@ -69,7 +69,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, history, isAuthenticated, setDark
           <IonListHeader>Reconnect</IonListHeader>
           {renderlistItems(routes.appPages)}
         </IonList>
-        <IonList lines="none">
+        {/* <IonList lines="none">
           <IonListHeader>Account</IonListHeader>
           {isAuthenticated ? renderlistItems(routes.loggedInPages) : renderlistItems(routes.loggedOutPages)}
           <IonItem>
@@ -86,7 +86,7 @@ const Menu: React.FC<MenuProps> = ({ darkMode, history, isAuthenticated, setDark
             <IonIcon slot="start" icon={hammer} />
             Show Tutorial
           </IonItem>
-        </IonList>
+        </IonList> */}
       </IonContent>
     </IonMenu>
   );
