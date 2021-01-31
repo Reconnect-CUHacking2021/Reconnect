@@ -1,7 +1,7 @@
 import React  from 'react';
 import { IonTabs, IonRouterOutlet, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react';
 import { Route, Redirect } from 'react-router';
-import { calendar, gift, person } from 'ionicons/icons';
+import { person } from 'ionicons/icons';
 import SchedulePage from './SchedulePage';
 import SpeakerList from './SpeakerList';
 import SpeakerDetail from './SpeakerDetail';
@@ -28,12 +28,12 @@ const MainTabs: React.FC<MainTabsProps> = () => {
         <Route path="/tabs/store/:id" component={SpeakerDetail} exact={true} />
         <Route path="/tabs/store/sessions/:id" component={SessionDetail} />
         
-        <Route path="/tabs/account" render={() => <MapView />} exact={true} />
-        <Route path="/tabs/account" render={() => <Account />} exact={true} />
+        {/* <Route path="/tabs/account" render={() => <MapView />} exact={true} /> */}
+        <Route path="/tabs/account" component={Account} exact={true} />
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
         <IonTabButton tab="updates" href="/tabs/updates">
-          <IonIcon icon={calendar} />
+          <IonIcon src="/assets/icon/updates.svg" />
           <IonLabel>Updates</IonLabel>
         </IonTabButton>
         <IonTabButton tab="store" href="/tabs/store">
