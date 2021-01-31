@@ -1,0 +1,265 @@
+{
+  "schedule": [
+    {
+      "date": "2047-05-17",
+      "groups": [
+        {
+          "time": "December 10th, 2020",
+          "sessions": [
+            {
+              "name": "Economic Response Plan",
+              "location": "Hall 2",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Ted Turtle"],
+              "date": "canada.ca/department-finance",
+              "timeStart": "9:30 am",
+              "timeEnd": "9:45 am",
+              "tracks": ["Economic Services"],
+              "id": "2"
+            }
+          ]
+        },
+        {
+          "time": "December 18th, 2020",
+          "sessions": [
+            {
+              "name": "Coronavirus Outbreak Update",
+              "location": "Executive Ballroom",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Rachel Rabbit"],
+              "date": "canada.ca/public-health",
+              "timeStart": "9:45 am",
+              "timeEnd": "10:00 am",
+              "tracks": ["Outbreak Updates"],
+              "id": "3"
+            }
+            ]
+        },
+        {
+          "time": "January 1st, 2021",
+          "sessions": [
+            {
+              "name": "Personal Protective Equipment",
+              "location": "Hall 3",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Ellie Elephant"],
+              "date": "https://www.canada.ca/en/health-canada/services/drugs-health-products/covid19-industry/medical-devices/personal-protective-equipment/overview.html",
+              "timeStart": "9:15 am",
+              "timeEnd": "9:30 am",
+              "tracks": ["Personal Safety"],
+              "id": "4"
+            }
+          ]
+        },
+        {
+          "time": "January 12th, 2021",
+          "sessions": [
+            {
+              "name": "Vaccines for COVID-19",
+              "location": "Dining Hall",
+              "description": "Come grab lunch with all the Ionic fanatics and talk all things Ionic",
+              "date": "canada.ca/public-health/services/diseases",
+              "timeStart": "12:00 pm",
+              "timeEnd": "1:00 pm",
+              "tracks": ["Vaccination Information"],
+              "id": "12"
+            }
+          ]
+        },
+        {
+          "time": "January 18th, 2021",
+          "sessions": [
+            {
+              "name": "Support for Individuals",
+              "location": "Hall 1",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Paul Puppy"],
+              "date": "canada.ca/department-finance/support-for-individuals",
+              "timeStart": "1:00 pm",
+              "timeEnd": "1:15 pm",
+              "tracks": ["Support Services"],
+              "id": "13"
+            }
+          ]
+        },
+        {
+          "time": "January 27th, 2021",
+          "sessions": [
+            {
+              "name": "Canada Emergency Rent Subsidy (CERS)",
+              "location": "Hall 2",
+              "description": "Mobile devices and browsers are now advanced enough that developers can build native-quality mobile apps using open web technologies like HTML5, Javascript, and CSS. In this talk, we’ll provide background on why and how we created Ionic, the design decisions made as we integrated Ionic with Angular, and the performance considerations for mobile platforms that our team had to overcome. We’ll also review new and upcoming Ionic features, and talk about the hidden powers and benefits of combining mobile app development and Angular.",
+              "speakerNames": ["Burt Bear", "Charlie Cheetah"],
+              "date": "https://www.canada.ca/en/revenue-agency/services/subsidy/emergency-rent-subsidy.html",
+              "timeStart": "2:00 pm",
+              "timeEnd": "2:30 pm",
+              "tracks": ["Economic Services"],
+              "id": "16"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+
+  "speakers": [
+    {
+      "name": "Burt Bear",
+      "profilePic": "/assets/img/speakers/bestbuy_logo.png",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Burt is a Bear. Burt's interests include poetry, dashing space heroes, and lions.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "burt@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "1"
+    },
+    {
+      "name": "Charlie Cheetah",
+      "profilePic": "/assets/img/speakers/starbucks_logo.png",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Charlie is a Cheetah. Charlie's interests include country music, plush animals, pyrotechnics, and skeletons.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "charlie@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "2"
+    },
+    {
+      "name": "Donald Duck",
+      "profilePic": "/assets/img/speakers/shoppers_logo.png",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Donald is a Duck. Donald's interests include carpentry, superheroes, merpeople, and glam rock.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "donald@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "3"
+    },
+    {
+      "name": "Eva Eagle",
+      "profilePic": "/assets/img/speakers/longos_logo.png",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Eva is an Eagle. Eva's interests include ants, seashells, and cupcakes.",
+      "title": "Developer Advocate",
+      "location": "Everywhere",
+      "email": "eva@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "4"
+    },
+    {
+      "name": "Ellie Elephant",
+      "profilePic": "/assets/img/speakers/ebgames_logo.png",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Ellie is an Elephant. Ellie's interests include pocket watches, pool, hand fans, and ninjas.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "ellie@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "5"
+    },
+    {
+      "name": "Gino Giraffe",
+      "profilePic": "/assets/img/speakers/walmart_logo.png",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Gino is a Giraffe. Gino's interests include candy-making, unicorns, and birdhouses.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "gino@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "6"
+    },
+    {
+      "name": "Isabella Iguana",
+      "profilePic": "/assets/img/speakers/picklebarrel_logo.png",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Isabella is an Iguana. Isabella's interests include crystals, architecture, and candle-making.",
+      "title": "Software Engineer",
+      "location": "Everywhere",
+      "email": "isabella@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "7"
+    },
+    {
+      "name": "Karl Kitten",
+      "profilePic": "/assets/img/speakers/mcdonalds_logo.png",
+      "instagram": "ionicframework",
+      "twitter": "ionicframework",
+      "about": "Karl is a Kitten. Karl's interests include skiing, jewelry, and needlepoint.",
+      "title": "Developer Advocate",
+      "location": "Everywhere",
+      "email": "karl@example.com",
+      "phone": "+1-541-754-3010",
+      "id": "8"
+    }
+  ],
+
+  "map": [
+    {
+      "name": "Monona Terrace Convention Center",
+      "lat": 43.071584,
+      "lng": -89.38012,
+      "center": true
+    },
+    {
+      "name": "Ionic HQ",
+      "lat": 43.074395,
+      "lng": -89.381056
+    },
+    {
+      "name": "Afterparty - Brocach Irish Pub",
+      "lat": 43.07336,
+      "lng": -89.38335
+    }
+  ],
+
+  "tracks": [
+    {
+      "name": "Angular",
+      "icon": "logo-angular"
+    },
+    {
+      "name": "Documentation",
+      "icon": "document"
+    },
+    {
+      "name": "Food",
+      "icon": "restaurant"
+    },
+    {
+      "name": "Ionic",
+      "icon": "logo-ionic"
+    },
+    {
+      "name": "Tooling",
+      "icon": "hammer"
+    },
+    {
+      "name": "Design",
+      "icon": "color-palette"
+    },
+    {
+      "name": "Services",
+      "icon": "cog"
+    },
+    {
+      "name": "Workshop",
+      "icon": "construct"
+    },
+    {
+      "name": "Communication",
+      "icon": "call"
+    },
+    {
+      "name": "Navigation",
+      "icon": "compass"
+    }
+  ]
+}

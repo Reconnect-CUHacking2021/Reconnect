@@ -1,0 +1,73 @@
+#session-detail-page {
+  .session-track-ionic {
+    color: var(--ion-color-primary);
+  }
+
+  .session-track-angular {
+    color: var(--ion-color-angular);
+  }
+
+  .session-track-personal {
+    color: var(--ion-color-personal);
+  }
+
+  .session-track-update {
+    color: var(--ion-color-outbreak);
+  }
+
+  .session-track-services {
+    color: var(--ion-color-services);
+  }
+
+  .session-track-design {
+    color: var(--ion-color-design);
+  }
+
+  .session-track-economic {
+    color: var(--ion-color-economic);
+  }
+
+  .session-track-support {
+    color: var(--ion-color-support);
+  }
+
+  .session-track-vaccination {
+    color: var(--ion-color-vaccination);
+  }
+
+  .session-track-navigation {
+    color: var(--ion-color-navigation);
+  }
+
+  .show-favorite {
+    position: relative;
+  }
+
+  .icon-heart-empty {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+  }
+
+  .icon-heart {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transform: scale(0);
+    transition: transform 0.3s ease;
+  }
+
+  .show-favorite .icon-heart {
+    transform: scale(1);
+  }
+
+  .show-favorite .icon-heart-empty {
+    transform: scale(0);
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
