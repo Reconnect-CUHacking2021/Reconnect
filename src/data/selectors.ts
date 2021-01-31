@@ -1,6 +1,8 @@
 import { createSelector } from 'reselect';
 import { Schedule, Session, ScheduleGroup } from '../models/Schedule';
+import { Store } from '../models/Store';
 import { AppState } from './state';
+import { authRequest } from '../util/auth';
 
 const getSchedule = (state: AppState) => {
 
@@ -138,4 +140,9 @@ export const mapCenter = (state: AppState) => {
     };
   }
   return item;
+}
+
+export const getStoreList = async () : Promise<Array<Store>>  => {
+  const res = await authRequest.get("/api/v1/store");
+  return Promise.resolve(res.data);
 }

@@ -13,7 +13,7 @@ export const initialState: AppState = {
     filteredTracks: [],
     mapCenterId: 0,
     loading: false,
-    menuEnabled: true
+    menuEnabled: true,
   },
   user: {
     hasSeenTutorial: false,

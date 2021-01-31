@@ -1,25 +1,29 @@
 import React from 'react';
 import { IonHeader, IonToolbar, IonTitle, IonContent, IonPage, IonButtons, IonMenuButton, IonGrid, IonRow, IonCol, IonSearchbar } from '@ionic/react';
 import SpeakerItem from '../components/SpeakerItem';
-import { Speaker } from '../models/Speaker';
-import { Session } from '../models/Schedule';
+import { Store } from '../models/Store';
 import { connect } from '../data/connect';
-import * as selectors from '../data/selectors';
 import './SpeakerList.scss';
+import { authRequest } from "../util/auth";
+import { AxiosResponse } from 'axios';
 
-interface OwnProps { };
+interface OwnProps {  };
 
 interface StateProps {
-  speakers: Speaker[];
-  speakerSessions: { [key: string]: Session[] };
+  // stores: Store[];
 };
 
 interface DispatchProps { };
 
 interface SpeakerListProps extends OwnProps, StateProps, DispatchProps { };
 
-const SpeakerList: React.FC<SpeakerListProps> = ({ speakers, speakerSessions }) => {
-
+const SpeakerList: React.FC<SpeakerListProps> = () => {
+  const [stores, setStores] = React.useState([]);
+  React.useEffect(() => {
+    authRequest.get("/api/v1/store/").then((res: AxiosResponse) => {
+      setStores(res.data)
+    });
+  }, []);
   return (
     <IonPage id="speaker-list">
       <IonHeader translucent={true}>
@@ -38,18 +42,21 @@ const SpeakerList: React.FC<SpeakerListProps> = ({ speakers, speakerSessions }) 
           </IonToolbar>
         </IonHeader>
         <IonSearchbar style={{ padding: '18px 20px 0px' }} />
-          <IonGrid fixed>
+        <IonGrid fixed>
+          { stores !== [] ?
             <IonRow>
-              {speakers.map(speaker => (
-                <IonCol size="6" size-md="4" key={speaker.id}>
+              {stores.map((store: Store) => (
+                <IonCol size="6" size-md="4" key={store.pk}>
                   <SpeakerItem
-                    key={speaker.id}
-                    speaker={speaker}
-                    sessions={speakerSessions[speaker.name]}
+                    key={store.pk}
+                    store={store}
                   />
                 </IonCol>
               ))}
             </IonRow>
+            :
+            "asd"
+          }
           </IonGrid>
       </IonContent>
     </IonPage>
@@ -57,9 +64,5 @@ const SpeakerList: React.FC<SpeakerListProps> = ({ speakers, speakerSessions }) 
 };
 
 export default connect<OwnProps, StateProps, DispatchProps>({
-  mapStateToProps: (state) => ({
-    speakers: selectors.getSpeakers(state),
-    speakerSessions: selectors.getSpeakerSessions(state)
-  }),
   component: React.memo(SpeakerList)
 });

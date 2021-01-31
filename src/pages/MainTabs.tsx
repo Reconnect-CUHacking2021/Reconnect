@@ -26,7 +26,7 @@ const MainTabs: React.FC<MainTabsProps> = () => {
         <Route path="/tabs/store" render={() => <SpeakerList />} exact={true} />
         <Route path="/tabs/store/:id" component={SpeakerDetail} exact={true} />
         <Route path="/tabs/store/sessions/:id" component={SessionDetail} />
-        
+
         {/* <Route path="/tabs/account" render={() => <MapView />} exact={true} /> */}
         <Route path="/tabs/account" component={Account} exact={true} />
       </IonRouterOutlet>

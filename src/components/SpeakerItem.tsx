@@ -1,21 +1,19 @@
 import React from 'react';
-import { Session } from '../models/Schedule';
-import { Speaker } from '../models/Speaker';
+import { Store } from '../models/Store';
 import { IonCard, IonCardHeader, IonItem } from '@ionic/react';
 
 
 interface SpeakerItemProps {
-  speaker: Speaker;
-  sessions: Session[];
+  store: Store;
 }
 
-const SpeakerItem: React.FC<SpeakerItemProps> = ({ speaker, sessions }) => {
+const SpeakerItem: React.FC<SpeakerItemProps> = ({ store }) => {
   return (
     <>
       <IonCard className="speaker-card">
         <IonCardHeader>
-          <IonItem button detail={false} lines="none" className="speaker-item" routerLink={`/tabs/store/${speaker.id}`}>
-              <img src={process.env.PUBLIC_URL + speaker.profilePic} alt="Speaker profile pic" />
+          <IonItem button detail={false} lines="none" className="speaker-item" routerLink={`/tabs/store/${store.pk}`}>
+              {/* <img src={process.env.PUBLIC_URL + speaker.profilePic} alt="Speaker profile pic" /> */}
           </IonItem>
         </IonCardHeader>
       </IonCard>

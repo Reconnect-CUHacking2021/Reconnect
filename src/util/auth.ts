@@ -14,12 +14,12 @@ let tokenRequest = axios.create({
   }
 })
 
-const loginUser = async (username: string, password: string) => {
-  const loginBody = { username: username, password: password }
+const loginUser = async (username: string, email: string, password: string) => {
+  const loginBody = { username: username, email: email, password: password }
   try {
-    const response = await tokenRequest.post(`/api/token/`, loginBody);
-    window.localStorage.setItem(ACCESS_TOKEN, response.data.access);
-    window.localStorage.setItem(REFRESH_TOKEN, response.data.refresh);
+    const response = await tokenRequest.post(`/auth/login/`, loginBody);
+    console.log(response.data.key)
+    window.localStorage.setItem(ACCESS_TOKEN, response.data.key);
     return await Promise.resolve(response.data);
   } catch (error) {
     return await Promise.reject(error);
@@ -60,7 +60,7 @@ const authRequest = axios.create({
   baseURL: BASE_URL,
   timeout: 5000,
   headers: {
-    'Authorization': `Bearer ${window.localStorage.getItem(ACCESS_TOKEN)}`,
+    'Authorization': `Token ${window.localStorage.getItem(ACCESS_TOKEN)}`,
     'Content-Type': 'application/json',
   }
 });
@@ -78,8 +78,8 @@ const errorInterceptor = async (error: AxiosError) => {
       const status = error.response.status;
       if (isCorrectRefreshError(status)) {
         try {
-          await refreshToken();
-          const headerAuthorization = `Bearer ${window.localStorage.getItem(ACCESS_TOKEN)}`;
+          await loginUser("Test", "test@test.com", "Password123!");
+          const headerAuthorization = `Token ${window.localStorage.getItem(ACCESS_TOKEN)}`;
           authRequest.defaults.headers['Authorization'] = headerAuthorization;
           originalRequest.headers['Authorization'] = headerAuthorization;
           return await authRequest(originalRequest);
