@@ -68,7 +68,7 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
         <form noValidate onSubmit={login} style={{ padding: '0px 36px' }}>
           <IonList>
             <IonItem>
-              <IonLabel position="stacked" color="primary">Username</IonLabel>
+              <IonLabel position="stacked" color="primary">Email Address</IonLabel>
               <IonInput name="username" type="text" value={username} spellCheck={false} autocapitalize="off" onIonChange={e => {
                 setUsername(e.detail.value!);
                 setUsernameError(false);
@@ -79,7 +79,7 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
 
             {formSubmitted && usernameError && <IonText color="danger">
               <p className="ion-padding-start">
-                Username is required
+                An email address is required
               </p>
             </IonText>}
 
@@ -94,7 +94,7 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
 
             {formSubmitted && passwordError && <IonText color="danger">
               <p className="ion-padding-start">
-                Password is required
+                A password is required
               </p>
             </IonText>}
 
@@ -109,7 +109,7 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
 
             {formSubmitted && confirmPasswordError && <IonText color="danger">
               <p className="ion-padding-start">
-                Password confirmation is required
+                A password confirmation is required
               </p>
             </IonText>}
 
@@ -124,7 +124,7 @@ const Login: React.FC<LoginProps> = ({setIsLoggedIn, history, setUsername: setUs
 
             {formSubmitted && vaccinationCodeError && <IonText color="danger">
               <p className="ion-padding-start">
-                Vaccination code is required
+                A vaccination code is required
               </p>
             </IonText>}
           </IonList>
