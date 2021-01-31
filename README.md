@@ -3,7 +3,6 @@
 ## Table of Contents
 - [Getting Started](#getting-started)
 - [Description](#description)
-  - [Client-facing app](#client-facing app)
 
 ## Getting Started
 
@@ -19,3 +18,6 @@ Reconnect is the perfect platform for connecting store owners to customers in a 
 
 ### Client-facing app
 This is where consumers interact with our platform. They sign up and then input their vaccination code, which means we can verify if they have gotten their vaccination and stores that are only allowing people inside who are vaccined can go in. This is a great place to find stores, information, and also view your history of interactions with the stores.
+
+### Store View
+We know that stores already have tablets for deleivery apps. So we thought we would design an encompassing dashboard for reconnect. Where you can view the occupancy in your store, and also orders coming in for pick-up. This is great on the store side as it also allows them to scan people in/ out of the system.
