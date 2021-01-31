@@ -23,7 +23,7 @@ UX design, content creation, and business pitch
 * [Edward Li](https://github.com/RadioactiveHydra) - Grade 11, Ottawa \
 Back-end & architecture design
 
-* [Tomas McNamer](https://github.com/tommcn) - Grade 12, Ottawa \
+* [Tomas McNamer](https://github.com/tommcn) - Grade 10, Ottawa \
 Back-end & architecture design
 
 ## Frameworks
@@ -52,3 +52,6 @@ This is where consumers interact with our platform. They sign up and then input 
 ### Store View
 We know that stores already have tablets for deleivery apps. So we thought we would design an encompassing dashboard for reconnect. Where you can view the occupancy in your store, and also orders coming in for pick-up. This is great on the store side as it also allows them to scan people in/ out of the system.
 ![Store View](public/assets/img/Desktop-Tablet.png)
+
+## Architecture
+![Architecture](public/assets/img/Architecture.png)
